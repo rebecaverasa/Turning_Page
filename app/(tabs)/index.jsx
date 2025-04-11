@@ -2,9 +2,7 @@ import React from 'react';
 import MyHeader from '../../components/MyHeader';
 
 const App = () => {
-  return (
-    <MyHeader />
-  );
+  return <MyHeader />;
 };
 
 export default App;
