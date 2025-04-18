@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from '@rneui/themed';
+import UserAvatar from './UserAvatar';
 
 const MyHeader = () => {
     return (
@@ -9,14 +10,14 @@ const MyHeader = () => {
             barStyle="default"
             centerComponent={{
                 text: "Turning Page",
-                style: { color: "grey", fontSize: 16 },
+                style: { color: "#fff", fontSize: 16 },
             }}
             centerContainerStyle={{}}
             leftComponent={{ icon: "menu", color: "#fff" }}
             leftContainerStyle={{}}
             linearGradientProps={{}}
             placement="left"
-            rightComponent={{ icon: "home", color: "#fff" }}
+            rightComponent={<UserAvatar />}
             rightContainerStyle={{}}
             statusBarProps={{}}
         />
