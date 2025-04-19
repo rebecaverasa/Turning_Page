@@ -5,12 +5,7 @@ const UserAvatar = () => {
     return (
         <Avatar
             activeOpacity={0.2}
-            avatarStyle={{}}
             containerStyle={{ backgroundColor: "#F4D07A" }}
-            icon={{}}
-            iconStyle={{}}
-            imageProps={{}}
-            placeholderStyle={{}}
             rounded
             size="small"
             source={{ uri: "" }}

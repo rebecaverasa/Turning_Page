@@ -8,10 +8,24 @@ const MyHeader = () => {
         <Header
             backgroundColor="#2B2A2C"
             barStyle="default"
-            centerComponent={<IconAddBook />}
-            leftComponent={<IconMenu />}
             placement="center"
-            rightComponent={<IconProfile />}
+
+            leftComponent={< IconMenu />}
+            leftContainerStyle={{
+                justifyContent: 'flex-start',
+                alignItems: 'center',
+            }}
+
+            centerComponent={{ text: "Turning Page", style: { color: '#fff', fontSize: 18, fontFamily: 'YesevaOne' } }}
+            centerContainerStyle={{
+                justifyContent: 'center',
+            }}
+
+            rightComponent={< IconAddBook />}
+            rightContainerStyle={{
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+            }}
         />
     );
 };
