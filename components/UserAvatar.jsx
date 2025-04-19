@@ -6,7 +6,7 @@ const UserAvatar = () => {
         <Avatar
             activeOpacity={0.2}
             avatarStyle={{}}
-            containerStyle={{ backgroundColor: "#BDBDBD" }}
+            containerStyle={{ backgroundColor: "#F4D07A" }}
             icon={{}}
             iconStyle={{}}
             imageProps={{}}
