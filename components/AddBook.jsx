@@ -14,6 +14,7 @@ const AddBook = () => {
             containerStyle={{
                 height: 50,
                 width: 120,
+                margin: 10
             }}
             onPress={() => console.log('aye')}
         />

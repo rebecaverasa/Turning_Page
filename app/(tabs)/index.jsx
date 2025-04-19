@@ -9,7 +9,6 @@ const App = () => {
   return (
     <View>
       <MyHeader />
-      <AddBook />
       <BooksList />
       <BookModal />
     </View>
