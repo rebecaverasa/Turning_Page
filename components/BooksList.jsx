@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollView, Alert } from 'react-native';
-import { ListItem, Icon } from 'react-native-elements';
+import { ListItem, Icon, Avatar } from 'react-native-elements';
 
 const BookList = () => {
     const [books, setBooks] = useState([
@@ -23,7 +23,10 @@ const BookList = () => {
                     onPress={() => handleItemPress(book)}
                     bottomDivider
                 >
-                    <Icon name="book" type="feather" />
+                    <Avatar
+                        rounded
+                        source={{ uri: 'https://example.com/book-cover.jpg' }}
+                        size="medium" />
                     <ListItem.Content>
                         <ListItem.Title>{book}</ListItem.Title>
                     </ListItem.Content>
