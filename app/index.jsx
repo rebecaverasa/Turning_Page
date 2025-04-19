@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
 import BooksScreen from '../src/components/BooksScreen';
+import { View } from 'react-native';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -18,5 +19,9 @@ export default function App() {
 
   if (!fontsLoaded) return null;
 
-  return <BooksScreen />;
+  return (
+    <View style={{ flex: 1, backgroundColor: '#F9F7F3' }}>
+      <BooksScreen />;
+    </View>
+  )
 }

@@ -8,12 +8,19 @@ const BookList = () => {
         '1984',
         'The Alchemist',
         'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
+        'To Kill a Mockingbird',
     ]);
 
     const handleItemPress = (book) => {
         Alert.alert('Você clicou em:', book);
     };
-
 
     return (
         <ScrollView>
@@ -22,6 +29,9 @@ const BookList = () => {
                     key={index}
                     onPress={() => handleItemPress(book)}
                     bottomDivider
+                    containerStyle={{
+                        backgroundColor: '#F9F7F3',
+                    }}
                 >
                     <Avatar
                         rounded
