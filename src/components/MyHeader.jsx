@@ -1,22 +1,17 @@
 import React from 'react';
-import { Header } from '@rneui/themed';
-import UserAvatar from './UserAvatar';
+import { Header } from 'react-native-elements';
 import IconAddBook from './IconAddBook';
-import IconProfile from './IconProfile';
 import IconMenu from './IconMenu';
+import IconProfile from './IconProfile';
 const MyHeader = () => {
     return (
         <Header
             backgroundColor="#2B2A2C"
             barStyle="default"
-            centerContainerStyle={{}}
             centerComponent={<IconAddBook />}
             leftComponent={<IconMenu />}
-            linearGradientProps={{}}
             placement="center"
             rightComponent={<IconProfile />}
-            rightContainerStyle={{}}
-            statusBarProps={{}}
         />
     );
 };
