@@ -1,23 +1,19 @@
 import React from 'react';
 import { Header } from '@rneui/themed';
 import UserAvatar from './UserAvatar';
-
+import IconAddBook from './IconAddBook';
+import IconProfile from './IconProfile';
 const MyHeader = () => {
     return (
         <Header
-            backgroundColor="pink"
-            backgroundImageStyle={{}}
+            backgroundColor="#2B2A2C"
             barStyle="default"
-            centerComponent={{
-                text: "Turning Page",
-                style: { color: "#fff", fontSize: 16 },
-            }}
             centerContainerStyle={{}}
-            leftComponent={{ icon: "menu", color: "#fff" }}
-            leftContainerStyle={{}}
+            centerComponent={<IconAddBook />}
+            leftComponent={<IconProfile />}
             linearGradientProps={{}}
-            placement="left"
-            rightComponent={<UserAvatar />}
+            placement="center"
+            rightComponent={< UserAvatar />}
             rightContainerStyle={{}}
             statusBarProps={{}}
         />

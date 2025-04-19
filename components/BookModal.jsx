@@ -17,7 +17,7 @@ const BookModal = () => {
     });
 
     return (
-        <Modal visible={true} transparent animationType="fade">
+        <Modal visible={false} transparent animationType="fade">
             <View style={styles.container}>
                 <View style={styles.modalContent}>
                     <Text>Esse modal está sempre visível 😎</Text>
