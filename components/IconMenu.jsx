@@ -1,15 +1,15 @@
 import { Image, TouchableOpacity } from 'react-native';
-import profilewhite from "../assets/images/profilewhite.png"
+import thinmenu from "../assets/images/thinmenu.png"
 
-const IconProfile = () => {
+const IconMenu = () => {
     return (
         <TouchableOpacity onPress={() => console.log('Logo clicada')}>
             <Image
-                source={profilewhite}
+                source={thinmenu}
                 style={{ width: 120, height: 40, resizeMode: 'contain' }}
             />
         </TouchableOpacity>
     );
 }
 
-export default IconProfile;
+export default IconMenu;

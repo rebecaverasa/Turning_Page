@@ -3,6 +3,7 @@ import { Header } from '@rneui/themed';
 import UserAvatar from './UserAvatar';
 import IconAddBook from './IconAddBook';
 import IconProfile from './IconProfile';
+import IconMenu from './IconMenu';
 const MyHeader = () => {
     return (
         <Header
@@ -10,10 +11,10 @@ const MyHeader = () => {
             barStyle="default"
             centerContainerStyle={{}}
             centerComponent={<IconAddBook />}
-            leftComponent={<IconProfile />}
+            leftComponent={<IconMenu />}
             linearGradientProps={{}}
             placement="center"
-            rightComponent={< UserAvatar />}
+            rightComponent={<IconProfile />}
             rightContainerStyle={{}}
             statusBarProps={{}}
         />
@@ -21,4 +22,3 @@ const MyHeader = () => {
 };
 
 export default MyHeader;
-
