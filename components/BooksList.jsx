@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollView, Alert } from 'react-native';
-import { ListItem, Icon, Avatar } from 'react-native-elements';
+import { ListItem, Avatar } from 'react-native-elements';
 
 const BookList = () => {
     const [books, setBooks] = useState([

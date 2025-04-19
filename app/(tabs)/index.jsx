@@ -3,6 +3,7 @@ import MyHeader from '../../components/MyHeader';
 import BooksInput from '../../components/BooksInput';
 import BooksList from '../../components/BooksList';
 import { View } from 'react-native';
+import BookModal from '../../components/BookModal';
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <MyHeader />
       <BooksInput />
       <BooksList />
+      <BookModal />
     </View>
   )
 
