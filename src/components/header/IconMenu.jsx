@@ -1,15 +1,15 @@
 import { Image, TouchableOpacity } from 'react-native';
-import addbook from "../../assets/images/addbook.png";
+import thinmenu from "../../../assets/images/thinmenu.png";
 
-const IconAddBook = () => {
+const IconMenu = () => {
     return (
         <TouchableOpacity onPress={() => console.log('Logo clicada')}>
             <Image
-                source={addbook}
+                source={thinmenu}
                 style={{ width: 120, height: 40, resizeMode: 'contain' }}
             />
         </TouchableOpacity>
     );
-};
+}
 
-export default IconAddBook;
+export default IconMenu;

@@ -1,5 +1,5 @@
 import { Image, TouchableOpacity } from 'react-native';
-import profilewhite from "../../assets/images/profilewhite.png"
+import profilewhite from "../../../assets/images/profilewhite.png"
 
 const IconProfile = () => {
     return (
