@@ -5,10 +5,10 @@ import BookModal from './books/BookModal';
 import BookList from './books/BooksList';
 
 
-const BooksScreen = () => {
+const BooksScreen = ({ navigation }) => {
     return (
         <View>
-            <MyHeader />
+            <MyHeader navigation={navigation} />
             <BookList />
             <BookModal />
         </View>

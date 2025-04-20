@@ -2,15 +2,14 @@ import React from 'react';
 import { Header } from 'react-native-elements';
 import IconAddBook from './IconAddBook';
 import IconMenu from './IconMenu';
-import IconProfile from './IconProfile';
-const MyHeader = () => {
+const MyHeader = ({ navigation }) => {
     return (
         <Header
             backgroundColor="#2B2A2C"
             barStyle="default"
             placement="center"
 
-            leftComponent={< IconMenu />}
+            leftComponent={< IconMenu navigation={navigation} />}
             leftContainerStyle={{
                 justifyContent: 'flex-start',
                 alignItems: 'center',

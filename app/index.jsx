@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
-import BooksScreen from '../src/components/BooksScreen';
 import { View } from 'react-native';
+import DrawerNavigation from '../src/navigation/DrawerNavigation';
+import 'react-native-gesture-handler';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -21,7 +22,7 @@ export default function App() {
 
   return (
     <View style={{ flex: 1, backgroundColor: '#F9F7F3' }}>
-      <BooksScreen />;
+      <DrawerNavigation />
     </View>
   )
 }
