@@ -15,7 +15,7 @@ const MyHeader = ({ navigation }) => {
                 alignItems: 'center',
             }}
 
-            centerComponent={{ text: "Turning Page", style: { color: '#fff', fontSize: 18, fontFamily: 'YesevaOne' } }}
+            centerComponent={{ text: "Turning Page", style: { color: '#F9F7F3', fontSize: 18, fontFamily: 'YesevaOne' } }}
             centerContainerStyle={{
                 justifyContent: 'center',
             }}
