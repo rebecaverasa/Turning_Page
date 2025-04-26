@@ -4,8 +4,14 @@ import { useFonts } from 'expo-font';
 import { View } from 'react-native';
 import DrawerNavigation from '../src/navigation/DrawerNavigation';
 import 'react-native-gesture-handler';
+import styled from 'styled-components/native';
 
 SplashScreen.preventAutoHideAsync();
+
+const AppContainer = styled.View`
+  flex: 1;
+  background-color: #F9F7F3;
+`;
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -21,8 +27,8 @@ export default function App() {
   if (!fontsLoaded) return null;
 
   return (
-    <View style={{ flex: 1, backgroundColor: '#F9F7F3' }}>
+    <AppContainer>
       <DrawerNavigation />
-    </View>
+    </AppContainer>
   )
 }

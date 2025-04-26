@@ -7,15 +7,12 @@ const BookList = () => {
         'The Hobbit',
         '1984',
         'The Alchemist',
+        'Manacled',
+        'The Great Gatsby',
         'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
-        'To Kill a Mockingbird',
+        'Pride and Prejudice',
+        'The Catcher in the Rye',
+        'The Lord of the Rings',
     ]);
 
     const handleItemPress = (book) => {
