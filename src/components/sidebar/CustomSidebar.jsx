@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { DrawerContentScrollView, DrawerItemList } from '@react-navigation/drawer';
+import { DrawerContentScrollView } from '@react-navigation/drawer';
 
 const styles = StyleSheet.create({
     container: {
@@ -18,6 +18,22 @@ const styles = StyleSheet.create({
         color: '#F4D07A',
         fontFamily: 'YesevaOne',
     },
+    itemContainer: {
+        paddingVertical: 12,
+        paddingHorizontal: 20,
+    },
+    itemFocused: {
+        backgroundColor: '#A9A1A7',
+        borderRadius: 50,
+    },
+    itemText: {
+        fontSize: 15,
+        color: '#F9F7F3',
+        fontFamily: 'YesevaOne',
+    },
+    itemTextFocused: {
+        color: '#F9F7F3',
+    },
     logoutButton: {
         marginTop: 'auto',
         padding: 20,
@@ -28,24 +44,33 @@ const styles = StyleSheet.create({
         color: '#F9F7F3',
         fontSize: 16,
     },
-    item: {
-        fontSize: 20,
-        color: '#F4D07A',
-        fontFamily: 'YesevaOne',
-    }
 });
 
-const CustomSidebar = (props) => {
+const CustomSidebar = ({ navigation, state }) => {
     return (
-        <DrawerContentScrollView {...props} contentContainerStyle={styles.container}>
+        <DrawerContentScrollView contentContainerStyle={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.title}>Turning Page</Text>
             </View>
 
-            <DrawerItemList {...props} style={styles.item} />
+            {state.routes.map((route, index) => {
+                const focused = state.index === index;
+
+                return (
+                    <TouchableOpacity
+                        key={route.key}
+                        style={[styles.itemContainer, focused && styles.itemFocused]}
+                        onPress={() => navigation.navigate(route.name)}
+                    >
+                        <Text style={[styles.itemText, focused && styles.itemTextFocused]}>
+                            {route.name}
+                        </Text>
+                    </TouchableOpacity>
+                );
+            })}
 
             <TouchableOpacity style={styles.logoutButton} onPress={() => console.log('Logout')}>
-                <Text style={styles.logoutText}>Sair</Text>
+                <Text style={styles.logoutText}>Log out</Text>
             </TouchableOpacity>
         </DrawerContentScrollView>
     );

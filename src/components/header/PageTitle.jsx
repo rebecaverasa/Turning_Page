@@ -5,18 +5,17 @@ const Container = styled.View`
 `
 
 const TitleText = styled.Text`
-    font-size: 16px;
-    color: #F9F7F3;
-    font-family: 'YesevaOne';
     text-align: left;
     justify-content: center;
-    margin-left: 13px;
-    background-color: #A9A1A7;
-    padding: 4px 8px;
-    border-radius: 6px;
     align-self: flex-start;
     margin: 10px;
     margin-left: 20px;
+    border-radius: 50px;
+    padding: 4px 16px;
+    font-family: 'YesevaOne';
+    font-size: 16px;
+    color: #F9F7F3;
+    background-color: #A9A1A7;
 `;
 
 const PageTitle = ({ title }) => {

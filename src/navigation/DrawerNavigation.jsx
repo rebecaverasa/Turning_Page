@@ -1,5 +1,4 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import BooksScreen from "../../src/components/BooksScreen";
 import CustomSidebar from "../components/sidebar/CustomSidebar";
 import Reading from "../screens/Reading";
 import WannaRead from "../screens/WannaRead";
