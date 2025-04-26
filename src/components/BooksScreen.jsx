@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import MyHeader from './header/MyHeader';
 import BookModal from './books/BookModal';
 import BookList from './books/BooksList';
@@ -15,7 +15,6 @@ const BooksScreen = ({ navigation, title }) => {
             <BookModal />
         </View>
     )
-
 };
 
 export default BooksScreen;

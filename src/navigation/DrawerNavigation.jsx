@@ -10,7 +10,7 @@ const Drawer = createDrawerNavigator();
 const DrawerNavigation = () => {
     return (
         <Drawer.Navigator drawerContent={(props) => <CustomSidebar {...props} />} screenOptions={{ headerShown: false }}>
-            <Drawer.Screen name="WannaRead" component={WannaRead} />
+            <Drawer.Screen name="Wanna read" component={WannaRead} />
             <Drawer.Screen name="Readed" component={Readed} />
             <Drawer.Screen name="Reading" component={Reading} />
         </Drawer.Navigator>
