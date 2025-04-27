@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
     itemText: {
         fontSize: 15,
         color: '#F9F7F3',
-        fontFamily: 'YesevaOne',
+        fontFamily: 'Raleway',
     },
     itemTextFocused: {
-        color: '#F9F7F3',
+        color: '#2B2A2C',
     },
     logoutButton: {
         marginTop: 'auto',
@@ -55,6 +55,7 @@ const CustomSidebar = ({ navigation, state }) => {
 
             {state.routes.map((route, index) => {
                 const focused = state.index === index;
+                { console.log(state.routes) }
 
                 return (
                     <TouchableOpacity

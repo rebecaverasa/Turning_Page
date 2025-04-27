@@ -12,9 +12,9 @@ const TitleText = styled.Text`
     margin-left: 20px;
     border-radius: 50px;
     padding: 4px 16px;
-    font-family: 'YesevaOne';
+    font-family: 'Raleway';
     font-size: 16px;
-    color: #F9F7F3;
+    color: #2B2A2C;
     background-color: #A9A1A7;
 `;
 
