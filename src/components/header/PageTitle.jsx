@@ -12,7 +12,7 @@ const TitleText = styled.Text`
     margin-left: 20px;
     border-radius: 50px;
     padding: 4px 16px;
-    font-family: 'Raleway';
+    font-family: 'Raleway_600';
     font-size: 16px;
     color: #2B2A2C;
     background-color: #A9A1A7;

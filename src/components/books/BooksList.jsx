@@ -35,7 +35,7 @@ const BookList = () => {
                         source={{ uri: 'https://example.com/book-cover.jpg' }}
                         size="medium" />
                     <ListItem.Content>
-                        <ListItem.Title style={{ fontFamily: 'Raleway' }}>{book}</ListItem.Title>
+                        <ListItem.Title style={{ fontFamily: 'Raleway_400' }}>{book}</ListItem.Title>
                     </ListItem.Content>
                     <ListItem.Chevron />
                 </ListItem>

@@ -13,6 +13,7 @@ const MyHeader = ({ navigation }) => {
             leftContainerStyle={{
                 justifyContent: 'flex-start',
                 alignItems: 'center',
+                marginLeft: 0,
             }}
 
             centerComponent={{ text: "Turning Page", style: { color: '#F9F7F3', fontSize: 18, fontFamily: 'YesevaOne' } }}

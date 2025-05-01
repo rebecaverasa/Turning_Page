@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     itemText: {
         fontSize: 15,
         color: '#F9F7F3',
-        fontFamily: 'Raleway',
+        fontFamily: 'Raleway_400',
     },
     itemTextFocused: {
         color: '#2B2A2C',

@@ -15,7 +15,10 @@ const AppContainer = styled.View`
 export default function App() {
   const [fontsLoaded] = useFonts({
     YesevaOne: require('../assets/fonts/YesevaOne-Regular.ttf'),
-    Raleway: require('../assets/fonts/Raleway-VariableFont_wght.ttf'),
+    Raleway_400: require('../assets/fonts/Raleway-Regular.ttf'),
+    Raleway_500: require('../assets/fonts/Raleway-Medium.ttf'),
+    Raleway_600: require('../assets/fonts/Raleway-SemiBold.ttf'),
+    Raleway_700: require('../assets/fonts/Raleway-Bold.ttf'),
   });
 
   useEffect(() => {
