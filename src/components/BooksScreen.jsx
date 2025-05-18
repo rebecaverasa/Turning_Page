@@ -29,12 +29,16 @@ const BooksScreen = ({ navigation, title }) => {
         setBooks([...books, book])
     }
 
+    const handleRemoveBook = (indexToRemove) => {
+        setBooks(books.filter((_, idx) => idx !== indexToRemove))
+    }
+
     return (
         <View>
             <MyHeader navigation={navigation} />
             <PageTitle title={title} />
             <AddBookInput onAddBook={onAddBook} />
-            <BookList books={books} />
+            <BookList books={books} onRemoveBook={handleRemoveBook} />
             <BookModal />
         </View>
     )

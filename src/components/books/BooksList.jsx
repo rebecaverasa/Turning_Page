@@ -1,7 +1,7 @@
 import { ScrollView } from 'react-native';
-import { ListItem, Avatar } from 'react-native-elements';
+import { ListItem, Avatar, Icon } from 'react-native-elements';
 
-const BookList = ({ books }) => {
+const BookList = ({ books, onRemoveBook }) => {
 
     return (
         <ScrollView>
@@ -20,6 +20,7 @@ const BookList = ({ books }) => {
                     <ListItem.Content>
                         <ListItem.Title style={{ fontFamily: 'Raleway_400' }}>{book}</ListItem.Title>
                     </ListItem.Content>
+                    <Icon name="delete" size={24} onPress={() => onRemoveBook(index)} />
                     <ListItem.Chevron />
                 </ListItem>
             ))}
