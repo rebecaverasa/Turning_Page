@@ -8,10 +8,11 @@ const AddBookInput = ({ onAddBook }) => {
 
     const handleSend = () => {
         if (value.trim() !== "") {
-            onAddBook(value.trim());
-            setValue("");
+            onAddBook(value)
+            setValue("")
         }
-    };
+    }
+
 
     return (
         <Input

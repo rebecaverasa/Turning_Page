@@ -8,23 +8,24 @@ import { useState } from 'react';
 
 
 const BooksScreen = ({ navigation, title }) => {
+
     const [readedBooks, setReadedBooks] = useState([]);
-    const [wantToReadBooks, setWantToReadBooks] = useState([]);
     const [readingBooks, setReadingBooks] = useState([]);
+    const [wannareadBooks, setWannareadBooks] = useState([]);
 
     let books, setBooks;
     if (title === 'Readed') {
-        books = readedBooks;
-        setBooks = setReadedBooks;
-    } else if (title === 'Wanna read') {
-        books = wantToReadBooks;
-        setBooks = setWantToReadBooks;
+        books = readedBooks
+        setBooks = setReadedBooks
     } else if (title === 'Reading') {
-        books = readingBooks;
-        setBooks = setReadingBooks;
+        books = readingBooks
+        setBooks = setReadingBooks
+    } else if (title === 'Wanna read') {
+        books = wannareadBooks
+        setBooks = setWannareadBooks
     }
 
-    const addBook = (book) => {
+    const onAddBook = (book) => {
         setBooks([...books, book])
     }
 
@@ -32,7 +33,7 @@ const BooksScreen = ({ navigation, title }) => {
         <View>
             <MyHeader navigation={navigation} />
             <PageTitle title={title} />
-            <AddBookInput onAddBook={addBook} />
+            <AddBookInput onAddBook={onAddBook} />
             <BookList books={books} />
             <BookModal />
         </View>
